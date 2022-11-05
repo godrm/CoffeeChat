@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "splash",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/godrm/Splash",
+      "state" : {
+        "branch" : "master",
+        "revision" : "d2d445b772721f11d76312486872f792453ed2d6"
+      }
+    }
+  ],
+  "version" : 2
+}
