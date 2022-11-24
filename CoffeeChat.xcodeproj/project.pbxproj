@@ -30,6 +30,13 @@
 		8301511029165079007E019B /* ChatCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8301510F29165079007E019B /* ChatCommand.swift */; };
 		830378092916589000858E41 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830150FB29164E20007E019B /* XcodeKit.framework */; };
 		8303780A2916589000858E41 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 830150FB29164E20007E019B /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		839B2209292F0208007C1432 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B2208292F0208007C1432 /* SafariExtensionHandler.swift */; };
+		839B220B292F0208007C1432 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B220A292F0208007C1432 /* SafariExtensionViewController.swift */; };
+		839B220E292F0208007C1432 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 839B220D292F0208007C1432 /* script.js */; };
+		839B2210292F0208007C1432 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 839B220F292F0208007C1432 /* ToolbarItemIcon.pdf */; };
+		839B2213292F0208007C1432 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 839B2211292F0208007C1432 /* SafariExtensionViewController.xib */; };
+		839B2218292F0208007C1432 /* SafariAppChat.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 839B2206292F0208007C1432 /* SafariAppChat.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		839B221D292F05FA007C1432 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 839B221C292F05FA007C1432 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 			remoteGlobalIDString = 830150F629164E1F007E019B;
 			remoteInfo = XcodeChat;
 		};
+		839B2216292F0208007C1432 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 830150B729164DB0007E019B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 839B2205292F0208007C1432;
+			remoteInfo = SafariAppChat;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,6 +71,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				8301510629164E20007E019B /* XcodeChat.appex in Embed Foundation Extensions */,
+				839B2218292F0208007C1432 /* SafariAppChat.appex in Embed Foundation Extensions */,
 				830150EE29164E16007E019B /* SafariChat.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
@@ -102,6 +117,15 @@
 		8301510229164E20007E019B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8301510329164E20007E019B /* XcodeChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XcodeChat.entitlements; sourceTree = "<group>"; };
 		8301510F29165079007E019B /* ChatCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCommand.swift; sourceTree = "<group>"; };
+		839B2206292F0208007C1432 /* SafariAppChat.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SafariAppChat.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		839B2208292F0208007C1432 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		839B220A292F0208007C1432 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		839B220D292F0208007C1432 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		839B220F292F0208007C1432 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		839B2212292F0208007C1432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		839B2214292F0208007C1432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		839B2215292F0208007C1432 /* SafariAppChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafariAppChat.entitlements; sourceTree = "<group>"; };
+		839B221C292F05FA007C1432 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,15 +154,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		839B2203292F0208007C1432 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		830150B629164DB0007E019B = {
 			isa = PBXGroup;
 			children = (
+				839B221C292F05FA007C1432 /* README.md */,
 				830150C129164DB0007E019B /* CoffeeChat */,
 				830150D629164E16007E019B /* SafariChat */,
 				830150FD29164E20007E019B /* XcodeChat */,
+				839B2207292F0208007C1432 /* SafariAppChat */,
 				830150F829164E1F007E019B /* Frameworks */,
 				830150C029164DB0007E019B /* Products */,
 			);
@@ -150,6 +183,7 @@
 				830150BF29164DB0007E019B /* CoffeeChat.app */,
 				830150D529164E16007E019B /* SafariChat.appex */,
 				830150F729164E1F007E019B /* XcodeChat.appex */,
+				839B2206292F0208007C1432 /* SafariAppChat.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,6 +247,28 @@
 			path = XcodeChat;
 			sourceTree = "<group>";
 		};
+		839B2207292F0208007C1432 /* SafariAppChat */ = {
+			isa = PBXGroup;
+			children = (
+				839B2208292F0208007C1432 /* SafariExtensionHandler.swift */,
+				839B220A292F0208007C1432 /* SafariExtensionViewController.swift */,
+				839B2211292F0208007C1432 /* SafariExtensionViewController.xib */,
+				839B2214292F0208007C1432 /* Info.plist */,
+				839B2215292F0208007C1432 /* SafariAppChat.entitlements */,
+				839B220C292F0208007C1432 /* Resources */,
+			);
+			path = SafariAppChat;
+			sourceTree = "<group>";
+		};
+		839B220C292F0208007C1432 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				839B220D292F0208007C1432 /* script.js */,
+				839B220F292F0208007C1432 /* ToolbarItemIcon.pdf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -230,6 +286,7 @@
 			dependencies = (
 				830150ED29164E16007E019B /* PBXTargetDependency */,
 				8301510529164E20007E019B /* PBXTargetDependency */,
+				839B2217292F0208007C1432 /* PBXTargetDependency */,
 			);
 			name = CoffeeChat;
 			packageProductDependencies = (
@@ -277,6 +334,23 @@
 			productReference = 830150F729164E1F007E019B /* XcodeChat.appex */;
 			productType = "com.apple.product-type.xcode-extension";
 		};
+		839B2205292F0208007C1432 /* SafariAppChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 839B221B292F0208007C1432 /* Build configuration list for PBXNativeTarget "SafariAppChat" */;
+			buildPhases = (
+				839B2202292F0208007C1432 /* Sources */,
+				839B2203292F0208007C1432 /* Frameworks */,
+				839B2204292F0208007C1432 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SafariAppChat;
+			productName = SafariAppChat;
+			productReference = 839B2206292F0208007C1432 /* SafariAppChat.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -294,6 +368,9 @@
 						CreatedOnToolsVersion = 14.1;
 					};
 					830150F629164E1F007E019B = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					839B2205292F0208007C1432 = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
@@ -317,6 +394,7 @@
 				830150BE29164DB0007E019B /* CoffeeChat */,
 				830150D429164E16007E019B /* SafariChat */,
 				830150F629164E1F007E019B /* XcodeChat */,
+				839B2205292F0208007C1432 /* SafariAppChat */,
 			);
 		};
 /* End PBXProject section */
@@ -326,6 +404,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839B221D292F05FA007C1432 /* README.md in Resources */,
 				830150C729164DB1007E019B /* Assets.xcassets in Resources */,
 				830150CA29164DB1007E019B /* Main.storyboard in Resources */,
 			);
@@ -350,6 +429,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839B2204292F0208007C1432 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839B2213292F0208007C1432 /* SafariExtensionViewController.xib in Resources */,
+				839B2210292F0208007C1432 /* ToolbarItemIcon.pdf in Resources */,
+				839B220E292F0208007C1432 /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +472,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		839B2202292F0208007C1432 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839B220B292F0208007C1432 /* SafariExtensionViewController.swift in Sources */,
+				839B2209292F0208007C1432 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -396,6 +494,11 @@
 			target = 830150F629164E1F007E019B /* XcodeChat */;
 			targetProxy = 8301510429164E20007E019B /* PBXContainerItemProxy */;
 		};
+		839B2217292F0208007C1432 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 839B2205292F0208007C1432 /* SafariAppChat */;
+			targetProxy = 839B2216292F0208007C1432 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -405,6 +508,14 @@
 				830150C929164DB1007E019B /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		839B2211292F0208007C1432 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				839B2212292F0208007C1432 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -699,6 +810,68 @@
 			};
 			name = Release;
 		};
+		839B2219292F0208007C1432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SafariAppChat/SafariAppChat.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B3PWYBKFUK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafariAppChat/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SafariAppChat;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.letswift.CoffeeChat.SafariAppChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		839B221A292F0208007C1432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SafariAppChat/SafariAppChat.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B3PWYBKFUK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafariAppChat/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SafariAppChat;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.letswift.CoffeeChat.SafariAppChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -734,6 +907,15 @@
 			buildConfigurations = (
 				8301510829164E20007E019B /* Debug */,
 				8301510929164E20007E019B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		839B221B292F0208007C1432 /* Build configuration list for PBXNativeTarget "SafariAppChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839B2219292F0208007C1432 /* Debug */,
+				839B221A292F0208007C1432 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

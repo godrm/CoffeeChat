@@ -57,6 +57,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                             DispatchQueue.main.async {
                                 NotificationManager.sendNotification(with: "👻 Safari Chat")
                             }
+                        case "SafariApp":
+                            DispatchQueue.main.async {
+                                NotificationManager.sendNotification(with: "🤡 Safari-App Chat")
+                            }
                         case "Xcode":
                             DispatchQueue.main.async {
                                 NotificationManager.sendNotification(with: "🤖 Xcode Chat")
